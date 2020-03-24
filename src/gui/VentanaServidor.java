@@ -81,12 +81,9 @@ public class VentanaServidor extends JFrame implements Runnable {
 				Socket replica = new Socket(direccionIP, 20000);
 				ObjectOutputStream paqueteReplica = new ObjectOutputStream(replica.getOutputStream());
 				((ObjectOutput) paqueteReplica).writeObject(data);
-				replica.close();
-				
-				
+				replica.close();				
 				paqueteReplica.close();
 				socketEntrada.close();
-				//socketServidor.close();
 			}
 			
 		} catch (IOException | ClassNotFoundException e) {

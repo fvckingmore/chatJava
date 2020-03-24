@@ -149,8 +149,7 @@ public class VentanaCliente extends JFrame implements Runnable {
 				
 				campoMesajes.append("["+ paqueteEntrada.getNickName()+ "]: "+ paqueteEntrada.getMensaje()+ "\n");
 				socketCliente.close();
-				//servidorCliente.close();
-				
+
 			}
 			
 		} catch (IOException | ClassNotFoundException e) {

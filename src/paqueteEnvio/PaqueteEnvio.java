@@ -29,7 +29,4 @@ public class PaqueteEnvio implements Serializable {
 	public void setMensaje(String mensaje) {
 		this.mensaje = mensaje;
 	}
-	
-	
-
 }
